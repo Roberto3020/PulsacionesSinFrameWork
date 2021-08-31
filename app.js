@@ -7,9 +7,9 @@ function CalcularPulsacion() {
 
     var pulsacion;
     if (sexo === 'm') {
-        pulsacion = (220 - edad) / 10;
-    } else if (sexo === "f") {
         pulsacion = (210 - edad) / 10;
+    } else if (sexo === "f") {
+        pulsacion = (220 - edad) / 10;
     }
 
     document.getElementById("pulsacion").value = pulsacion;
