@@ -18,32 +18,27 @@
     <link rel="stylesheet" href="styless.css">
 
     <!--JS-->
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
     <title>Pulsaciones</title>
 </head>
 
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="calcularPulsacion.html">Calcular Pulsacion</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <div>
-            <img class="fondo" src="./img/fondo-pulsaciones.png" alt="">
+            <nav class="nav-menu">
+                <ul class="menu">
+                    <a href="../principal/index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="../calculos/calcularPulsacion.html">
+                        <li>Calcular Pulsacion</li>
+                    </a>
+                </ul>
+            </nav>
+            <hr>
+        </div>
+        <div>
+            <img class="fondo" src="../img/fondo-pulsaciones.png" alt="">
         </div>
         <div class="cards">
             <div>
@@ -65,16 +60,7 @@
             </div>
         </div>
         <div>
-            <div>
-                <section class="social2">
-                    <p class="footer">ROBERTO ORCASITA</p>
-                    <div class="links">
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </section>
-            </div>
+
         </div>
         <div>
             <form>
@@ -93,6 +79,34 @@
                 <label class="pulsacion" for="pulsacion">Pulsacion</label>
                 <input class="pulsacion" type="number" id="pulsacion" placeholder="pulsacion">
             </form>
+        </div>
+        <div class="container">
+            <h2>Pulsaciones</h2>
+            <table class="table table-hove" id="pulsacionesTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Identificacion</th>
+                        <th>Sexo</th>
+                        <th>Edad</th>
+                        <th>Pulsaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <section class="social2">
+                <p class="footer">ROBERTO ORCASITA</p>
+                <div class="links">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </section>
         </div>
 </body>
 
